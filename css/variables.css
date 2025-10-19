@@ -1,11 +1,15 @@
 :root {
   /* ===== Color Palette ===== */
-  --primary-color: #c81e1e;     
-  --secondary-color: #f0b3b3;  
-  --primary-text-color: #191a23;       
+  --primary-color: #c81e1e;
+  --primary-border: #a01818;     
+  --secondary-color: #f0b3b3;
+  --secondary-border: #d99a9a;  
+  --primary-text-color: #191a23;
+  --read-more-color: #bebebe8d;       
   --background-color: #f3f3f3;   
   --white-color: #ffffff;        
   --alert-color: #cc0000;        
-  --secondary-text-color: #263238;         
+  --secondary-text-color: #263238;
+  --dark-border: #1a2226;         
 }
 
