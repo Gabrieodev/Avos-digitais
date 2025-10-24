@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Edição - Avós Digitais</title>
+  <link rel="stylesheet" href="../css/painel-editar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="painel-header">
+    <div class="painel-top">
+      <img src="../assets/img/logo.png" alt="Avós Digitais" class="logo">
+      <h1>Painel de Edição</h1>
+    </div>
+    <p>Atualize os textos exibidos no site de forma simples e rápida.</p>
+  </header>
+
+  <main class="painel-container">
+
+    <section class="card">
+      <h2>Editar Conteúdo do Site</h2>
+
+      <form id="form-edicao">
+        <label for="heroTitle">Título Principal</label>
+        <input type="text" id="heroTitle" placeholder="Ex: Você Conectado com Segurança e Confiança" />
+
+        <label for="heroDescription">Descrição Principal</label>
+        <textarea id="heroDescription" rows="3"></textarea>
+
+        <label for="aboutText">Texto 'Sobre Nós'</label>
+        <textarea id="aboutText" rows="5"></textarea>
+
+        <label for="galleryIntro">Introdução das Dicas Visuais</label>
+        <textarea id="galleryIntro" rows="3"></textarea>
+
+        <button type="submit" class="btn-salvar">Salvar Alterações</button>
+        <p id="resposta" class="mensagem-status"></p>
+      </form>
+    </section>
+
+    <button id="logoutBtn" class="logout">Sair</button>
+
+  </main>
+
+  <footer class="painel-footer">
+    <p>© 2025 Avós Digitais — Painel Administrativo</p>
+  </footer>
+
+  <script src="../js/painel-editar.js"></script>
+</body>
+
+</html>

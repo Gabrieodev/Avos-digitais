@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel do Administrador | Avós Digitais</title>
+  <link rel="stylesheet" href="css/painel.css" />
+</head>
+
+<body>
+  <header class="painel-header">
+    <h1>Painel Administrativo</h1>
+    <button id="logoutBtn" class="logout-btn">Sair</button>
+  </header>
+
+  <main class="painel-container">
+    <section id="stats-section" class="card">
+      <h2>Estatísticas de Acesso</h2>
+      <p id="stats-info">Carregando...</p>
+    </section>
+
+    <section id="grafico-section" class="card">
+      <h2>Evolução dos Acessos</h2>
+      <canvas id="graficoAcessos"></canvas>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <section id="mensagens-section" class="card">
+      <h2>Mensagens Recebidas</h2>
+      <div id="mensagens-container"></div>
+    </section>
+
+    <section id="logs-section" class="card">
+      <h2>Registros de Acesso</h2>
+      <div id="logs-container"></div>
+    </section>
+  </main>
+
+  <section class="card">
+    <h2>Edição do Site</h2>
+    <p>Gerencie os textos principais do site.</p>
+    <a href="painel-editar.html" class="btn">Abrir Editor</a>
+  </section>
+
+
+  <script src="js/painel.js"></script>
+</body>
+
+</html>

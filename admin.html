@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel Administrativo - Avós Digitais</title>
+  <link rel="stylesheet" href="css/admin.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="admin-header">
+    <h1>Painel Administrativo</h1>
+    <p>Gerencie o conteúdo do site Avós Digitais</p>
+  </header>
+
+  <main class="admin-container">
+    <section class="card">
+      <h2>Editar Conteúdo</h2>
+      <form id="form-edicao">
+        <label for="heroTitle">Título Principal</label>
+        <input type="text" id="heroTitle" name="heroTitle" placeholder="Ex: Você Conectado com Segurança e Confiança" />
+
+        <label for="heroDescription">Descrição Principal</label>
+        <textarea id="heroDescription" name="heroDescription" rows="3"></textarea>
+
+        <label for="aboutText">Texto 'Sobre Nós'</label>
+        <textarea id="aboutText" name="aboutText" rows="4"></textarea>
+
+        <label for="galleryIntro">Introdução das Dicas</label>
+        <textarea id="galleryIntro" name="galleryIntro" rows="3"></textarea>
+
+        <button type="submit" class="btn-salvar">💾 Salvar Alterações</button>
+        <p id="resposta"></p>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Mensagens Recebidas</h2>
+      <div id="mensagens" class="mensagens-container">
+        <p>Carregando mensagens...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="admin-footer">
+    <p>© 2025 Avós Digitais — Painel Administrativo</p>
+  </footer>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

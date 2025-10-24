@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avós Digitais</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/variables.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="assets/img/logo.png" alt="">
+          <span>AvósDigitais</span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#about" class="nav-link">Sobre</a></li>
+          <li><a href="#cuidados" class="nav-link">Cuidados</a></li>
+          <li><a href="#gallery" class="nav-link">Dicas</a></li>
+          <li><a href="#contato" id="contactBtnMenu">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">Você Conectado com Segurança e Confiança</h1>
+        <p class="hero-description">
+          Aprenda a usar a internet de forma simples e segura.Descubra dicas práticas para evitar golpes, proteger seus
+          dados e aproveitar o melhor do mundo digital.
+          Explore nossos flashcards interativos e teste seus conhecimentos de forma divertida!
+        </p>
+        <a href="#" class="hero-button">Acessar Flashcard</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/img/main-image.png" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="info-card">
+      <div class="card-header">
+        <img src="assets/icons/lock.svg" alt="">
+        <h3>Navegue com Segurança</h3>
+      </div>
+      <p>Aprenda boas práticas para evitar golpes e manter seus dados protegidos ao usar a internet.</p>
+    </div>
+
+    <div class="info-card">
+      <div class="card-header">
+        <img src="assets/icons/security.svg" alt="">
+        <h3>Proteja Seus Dados</h3>
+      </div>
+      <p>Entenda como criar senhas fortes e reconhecer sites confiáveis antes de compartilhar informações.</p>
+    </div>
+
+    <div class="info-card">
+      <div class="card-header">
+        <img src="assets/icons/technology.svg" alt="">
+        <h3>Fique Atualizado</h3>
+      </div>
+      <p>Descubra dicas simples para aproveitar o melhor do mundo digital com segurança e confiança.</p>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="about-content">
+      <h2>
+        <span>Um pouco</span><br>
+        <span class="highlight">sobre nós</span>
+      </h2>
+      <p>
+        Somos um grupo da Universidade Cruzeiro do Sul, atualmente cursando o terceiro semestre.
+        Nosso objetivo é promover a inclusão digital, ajudando pessoas a usarem a internet de forma segura e consciente.
+        O Avós Digitais nasceu para tornar a internet um espaço mais acessível e seguro, especialmente para quem está
+        começando a explorar o mundo online. Acreditamos que nunca é tarde para aprender e que a tecnologia pode unir
+        gerações por meio do conhecimento e da conexão.
+      </p>
+    </div>
+  </section>
+
+  <section class="cards-section" id="cuidados">
+    <div class="section-header">
+      <h2>Principais Golpes Digitais Contra Idosos</h2>
+      <p>Conheça os golpes mais comuns aplicados na internet segundo o <a
+          href="https://www.serasa.com.br/premium/blog/golpes-contra-idosos/" target="_blank">Serasa</a> e aprenda a se
+        proteger de ameaças digitais clicando nos flashcards abaixo.</p>
+    </div>
+
+    <div class="cards">
+      <button class="card white">
+        <span class="label red">Falsa Central Telefônica</span>
+        <img src="assets/icons/phone.svg" alt="" />
+      </button>
+
+      <button class="card red">
+        <span class="second label red">Falso Empréstimo Consignado</span>
+        <img src="assets/icons/loan.svg" alt="" />
+      </button>
+
+      <button class="card black">
+        <span class="label white">Ajuda no Caixa Eletrônico</span>
+        <img src="assets/icons/money.svg" alt="" />
+      </button>
+
+      <button class="card white">
+        <span class="label red">Falso Presente de Aniversário</span>
+        <img src="assets/icons/gift.svg" alt="" />
+      </button>
+
+      <button class="card white">
+        <span class="label red">Vendas Falsas</span>
+        <img src="assets/icons/store.svg" alt="" />
+      </button>
+
+      <button class="card red">
+        <span class="second label red">Golpe do WhatsApp</span>
+        <img src="assets/icons/whatsapp.svg" alt="" />
+      </button>
+
+      <button class="card black">
+        <span class="label white">Phishing</span>
+        <img src="assets/icons/link.svg" alt="" />
+      </button>
+
+      <button class="card white">
+        <span class="label red">Falso Motoboy</span>
+        <img src="assets/icons/motorcycle.svg" alt="" />
+      </button>
+
+      <button class="card white">
+        <span class="label red">Falso Sequestro</span>
+        <img src="assets/icons/thug.svg" alt="" />
+      </button>
+    </div>
+
+    <!-- Popup de Informações dos Golpes -->
+    <div id="popup-info" class="popup-overlay">
+      <div class="popup-content">
+        <span id="fechar-info" class="popup-close">&times;</span>
+        <h2 id="titulo-golpe">Título do Golpe</h2>
+        <p id="texto-golpe">Aqui vai a explicação detalhada do golpe selecionado.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <main>
+    <section class="info-security-section">
+      <div class="content-wrapper">
+        <div class="image-area">
+          <img src="assets/img/text-image.png" alt="Ilustração sobre segurança da informação" />
+        </div>
+
+        <div class="text-area">
+          <h2>Protegendo os Idosos no Mundo Digital</h2>
+          <p>
+            No cenário atual, onde golpes digitais estão cada vez mais sofisticados, idosos se tornam
+            um dos principais alvos por falta de familiaridade com as tecnologias.
+            Entender os riscos e as formas de proteção é o primeiro passo para
+            evitar armadilhas virtuais, como mensagens falsas, ligações suspeitas ou sites enganosos.
+            A conscientização é uma das melhores defesas contra essas ameaças.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-section">
+      <h1 class="news-title">Alertas de Segurança Digital</h1>
+
+      <div class="news-card card-primary">
+        <div class="news-content">
+          <h2>Operação desarticula quadrilha que aplicava golpes em idosos</h2>
+          <h3>Ocorrência registrada na terça-feira, 14 de outubro de 2025, às 12h00</h3>
+          <p>A Polícia Civil de São José do Rio Preto (Deinter 5) prendeu, na segunda-feira (13), oito pessoas suspeitas
+            de integrar uma organização criminosa especializada em aplicar o chamado “golpe do falso presente” contra
+            idosos. Foram cumpridos oito mandados de prisão temporária e doze de busca e apreensão em diversos endereços
+            do município. Durante as investigações, foi apontado que o grupo é responsável por mais de 30 golpes
+            praticados em Rio Preto e cidades vizinhas.</p>
+          <!-- <button class="read-more" onclick="window.location.href='https://www.policiacivil.sp.gov.br/portal/faces/pages_home/noticias/noticiasDetalhes?rascunhoNoticia=0&collectionId=358412565221066606&contentId=UCM_070947&_afrLoop=1435779431339937&_afrWindowMode=0&_afrWindowId=null'"> Ler mais
+            </button> -->
+
+        </div>
+      </div>
+
+      <div class="news-card card-secondary">
+        <div class="news-content">
+          <h2>Mais de dois mil idosos são vítimas de golpes em Sergipe</h2>
+          <h3>Segundo a Secretaria de Estado da Segurança Pública, crimes foram registrados de janeiro a agosto de 2025.
+          </h3>
+          <p>De janeiro a agosto de 2025, foram registrados 2.120 casos de estelionato contra idosos em Sergipe. Os
+            dados são da Coordenadoria de Estatística e Análise Criminal (CEACrim), da Secretaria de Estado da Segurança
+            Pública (SSP). Além disso, de acordo com a SSP, o levantamento também apontou casos de apropriação de bens e
+            exposição do idoso ao perigo, muitas vezes, praticados por pessoas da própria família.</p>
+          <!-- <button class="read-more" onclick="window.location.href='https://g1.globo.com/se/sergipe/noticia/2025/10/07/mais-de-dois-mil-idosos-sao-vitimas-de-golpes-em-sergipe.ghtml'"> Ler mais
+            </button> -->
+        </div>
+      </div>
+
+      <div class="news-card card-dark">
+        <div class="news-content">
+          <h2>Prefeitura capacita 30 mil pessoas em educação digital em 2025</h2>
+          <h3>Crimes digitais dispararam nos últimos anos e público 60+ está entre os mais vulneráveis</h3>
+          <p>A Prefeitura de São Paulo já capacitou 30 mil pessoas em educação digital somente em 2025. A ação é parte
+            de uma política pública de combate ao aumento expressivo de golpes online, que cresceram 133% nos últimos
+            três anos no Brasil. Entre os públicos atendidos, os idosos estão entre os mais impactados, já que somente
+            em 2024, o Disque 100 registrou 72 mil casos de crimes virtuais envolvendo pessoas com 60 anos ou mais.</p>
+          <!-- <button class="read-more" onclick="window.location.href='https://prefeitura.sp.gov.br/w/prefeitura-capacita-30-mil-pessoas-em-educa%C3%A7%C3%A3o-digital-em-2025'"> Ler mais
+            </button> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <h2 class="section-title">Dicas Visuais de Segurança</h2>
+      <p class="section-subtitle">Aprenda em segundos com orientações simples e diretas.</p>
+
+      <div class="gallery-container">
+        <div class="gallery-card">
+          <img src="assets/img/gallery1.png" class="gallery1-photo" alt="" />
+          <div class="gallery-content">
+            <h3 class="gallery-title">Senhas Fortes</h3>
+            <p class="gallery-text">
+              Use letras, números e símbolos. Evite repetir senhas em sites diferentes.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/img/gallery2.png" class="gallery2-photo" alt="Cuidado com Links" />
+          <div class="gallery-content">
+            <h3 class="gallery-title">Cuidado com Links</h3>
+            <p class="gallery-text">
+              Desconfie de mensagens com urgência. Não clique sem verificar a fonte.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/img/gallery3.png" class="gallery3-photo" alt="Atualizações" />
+          <div class="gallery-content">
+            <h3 class="gallery-title">Atualize Sempre</h3>
+            <p class="gallery-text">
+              Atualizações corrigem falhas e aumentam a proteção.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/img/gallery4.png" class="gallery4-photo" alt="Não Compartilhe Códigos" />
+          <div class="gallery-content">
+            <h3 class="gallery-title">Não Compartilhe Códigos</h3>
+            <p class="gallery-text">
+              Nunca envie códigos de verificação para terceiros.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/img/gallery5.png" class="gallery5-photo" alt="Wi-Fi Público" />
+          <div class="gallery-content">
+            <h3 class="gallery-title">Cuidado com Wi-Fi Público</h3>
+            <p class="gallery-text">
+              Evite acessar contas pessoais em redes abertas.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/img/gallery6.png" class="gallery6-photo" alt="Wi-Fi Público" />
+          <div class="gallery-content">
+            <h3 class="gallery-title">Verifique Suas Contas</h3>
+            <p class="gallery-text">
+              Ative a verificação em duas etapas nas suas contas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="closing-section" class="closing-section">
+      <div class="container">
+        <div class="content">
+          <h2 class="title">Juntos por uma Internet Mais Segura</h2>
+          <p class="lead">A segurança digital começa com informação. Ao compartilhar o que você aprendeu hoje, você
+            ajuda a proteger não apenas a si mesmo, mas também quem você ama. Vamos juntos construir uma internet mais
+            segura para todas as gerações.</p>
+
+
+          <div class="actions">
+            <a href="#" class="btn primary" id="shareBtn" aria-label="Compartilhar">Compartilhar</a>
+            <a href="#contato" class="btn outline" id="contactBtn">Quero Ajudar / Contato</a>
+          </div>
+
+
+          <p class="small">Se preferir, ligações e visitas guiadas podem ser agendadas para grupos locais. Entre em
+            contato para saber como levar o projeto Avós Digitais à sua comunidade.</p>
+        </div>
+
+
+        <div class="illustration" aria-hidden="true">
+          <svg width="220" height="160" viewBox="0 0 220 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="220" height="160" rx="12" fill="var(--white-color)" />
+            <g transform="translate(22,22)">
+              <circle cx="28" cy="28" r="20" fill="var(--primary-color)" />
+              <rect x="62" y="8" width="96" height="40" rx="8" fill="var(--secondary-color)" />
+              <rect x="62" y="60" width="96" height="18" rx="8" fill="var(--secondary-color)" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <section class="dynamic-section" id="conteudo-dinamico">
+    <h2 id="titulo-dinamico">Carregando conteúdo...</h2>
+    <p id="texto-dinamico"></p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Avós Digitais</h3>
+        <p>Promovendo a inclusão digital e a segurança na internet para todas as gerações.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#about" class="nav-link">Sobre</a></li>
+          <li><a href="#cuidados" class="nav-link">Cuidados</a></li>
+          <li><a href="#gallery" class="nav-link">Dicas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Conecte-se Conosco</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Linkedin" class="icon">
+            <img src="assets/icons/linkedin.svg" alt="Linkedin">
+          </a>
+          <a href="#" aria-label="GitHub" class="icon">
+            <img src="assets/icons/github.svg" alt="Github">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Avós Digitais — Todos os direitos reservados.</p>
+      <p class="credit">Desenvolvido por estudantes da <strong>Universidade Cruzeiro do Sul</strong>.</p>
+    </div>
+  </footer>
+
+  <!--Entre em contato-->
+
+  <div id="popup-contato" class="popup-overlay">
+    <div class="popup-content">
+      <span id="fechar-popup" class="popup-close">&times;</span>
+      <h2>Entre em Contato</h2>
+
+      <form id="form-contato">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <p id="resposta"></p>
+    </div>
+  </div>
+
+
+  <script src="js/conteudo.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

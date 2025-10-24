@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "titulo": "",
+    "descricao": ""
+  },
+  "sobre": {
+    "texto": ""
+  },
+  "dicas": {
+    "intro": "",
+    "itens": []
+  },
+  "golpes": [
+    {
+      "titulo": "Falsa Central Telefônica",
+      "descricao": ""
+    },
+    {
+      "titulo": "Falso Empréstimo Consignado",
+      "descricao": ""
+    }
+  ]
+}
+
