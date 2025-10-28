@@ -164,3 +164,36 @@ shareBtn.addEventListener('click', (e) => {
         });
     }
 });
+
+const popupFlashcard = document.getElementById("popup-flashcard");
+const btnFlashcard = document.getElementById("flashcardInfoBtn");
+const fecharFlashcard = document.getElementById("fechar-flashcard");
+const btnIrFlashcards = document.getElementById("btnIrFlashcards");
+
+if (btnFlashcard && popupFlashcard && fecharFlashcard) {
+    btnFlashcard.addEventListener("click", (e) => {
+        e.preventDefault();
+        popupFlashcard.style.display = "flex";
+    });
+
+    fecharFlashcard.addEventListener("click", () => {
+        popupFlashcard.style.display = "none";
+    });
+
+    popupFlashcard.addEventListener("click", (e) => {
+        if (e.target === popupFlashcard) popupFlashcard.style.display = "none";
+    });
+
+    btnIrFlashcards.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        popupFlashcard.style.display = "none";
+
+        const secaoGolpes = document.querySelector("#cuidados");
+        if (secaoGolpes) {
+            secaoGolpes.scrollIntoView({ behavior: "smooth" });
+        } else {
+            window.location.href = "index.html#cuidados";
+        }
+    });
+}
