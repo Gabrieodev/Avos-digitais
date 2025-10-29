@@ -53,6 +53,6 @@ if (logoutBtn) {
   logoutBtn.addEventListener("click", () => {
     localStorage.removeItem("token");
     alert("Sessão encerrada!");
-    window.location.href = "painel-login.html";
+    window.location.href = "login.html";
   });
 }

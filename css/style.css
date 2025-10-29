@@ -753,7 +753,8 @@ main {
   padding: 30px;
   border-radius: 12px;
   max-width: 400px;
-  width: 90%;
+  height: 350px;
+  width: 100%;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   position: relative;
   animation: slideIn 0.3s ease forwards;
@@ -770,6 +771,7 @@ main {
 
 .popup-content h2 {
   margin-top: 15px;
+  margin-bottom: 15px;
   color: var(--primary-color, #c81e1e);
   text-align: center;
 }
@@ -792,13 +794,14 @@ main {
   color: #fff;
   border: none;
   border-radius: 8px;
+  margin-top: 25px;
   padding: 10px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .popup-content button:hover {
-  background: var(--primary-border, #a01818);
+  background: var(--alert-color, #a01818);
 }
 
 @keyframes fadeIn {
