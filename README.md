@@ -198,7 +198,7 @@ Este projeto está licenciado sob a **MIT License** — sinta-se à vontade para
 
 ## ⭐ Apoie o Projeto
 
-Se este conteúdo foi útil para você, **deixe uma estrela no repositório** e apoie o **Avós Digitais** a continuar promovendo **inclusão digital e segurança da informação** para todos.
+Se este conteúdo foi útil para você, **deixe uma estrela no repositório** e apoie o **Avós Digitais** a continuar promovendo **inclusão digital e segurança da informação** para todos!
 
 ---
 
